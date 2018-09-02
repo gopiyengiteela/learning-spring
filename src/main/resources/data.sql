@@ -1,0 +1,1 @@
+insert into room(name,room_number,bed_info) values('gopi','r1','1q');
