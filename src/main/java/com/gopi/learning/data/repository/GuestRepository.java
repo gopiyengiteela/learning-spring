@@ -1,8 +1,9 @@
 package com.gopi.learning.data.repository;
 
 import com.gopi.learning.data.entity.Guest;
-import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.data.repository.CrudRepository;
 
-public interface GuestRepository extends PagingAndSortingRepository<Guest, Long> {
-    Guest findOne(long id);
+public interface GuestRepository extends CrudRepository<Guest, Long> {
+
+    Guest findById(long guestId);
 }
